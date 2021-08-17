@@ -1,12 +1,17 @@
-import express from 'express';
+import express, { Request, Response } from 'express';
+
+import { getFeed } from '../services/rss';
 
 // eslint-disable-next-line new-cap
 const router = express.Router();
 
-router.get('/', (req, res) => {
+// eslint-disable-next-line @typescript-eslint/no-misused-promises
+router.get('/', async (req: Request<unknown, unknown, unknown, RSSQuery>, res: Response): Promise<Response> => {
   const { url } = req.query;
 
-  return res.json(url);
+  const response = await getFeed(url);
+
+  return res.json(response);
 });
 
 export default router;
