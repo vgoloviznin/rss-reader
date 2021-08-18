@@ -44,7 +44,7 @@ import { defineComponent } from "vue";
 import RSSItem from "./RSSItem.vue";
 
 const makePath = (url: string) =>
-  `http://localhost:3000/rss?url=${encodeURIComponent(url)}`;
+  `https://stark-temple-65091.herokuapp.com/rss?url=${encodeURIComponent(url)}`;
 const fetchFeed = (url: string): Promise<RSSResponse> =>
   url ? fetch(makePath(url)).then((r) => r.json()) : Promise.resolve({});
 
