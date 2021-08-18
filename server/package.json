@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "rm -rf dist && npm i && tsc",
-    "start": "node ./dist/src/server/api.js"
+    "start": "node ./dist/app.js"
   },
   "repository": {
     "type": "git",
