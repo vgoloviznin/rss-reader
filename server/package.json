@@ -4,7 +4,7 @@
   "description": "rss reader full stack app",
   "main": "app.js",
   "scripts": {
-    "test": "jest",
+    "test": "./node_modules/.bin/jest",
     "build": "rm -rf dist && npm i && ./node_modules/.bin/tsc",
     "start": "node ./dist/app.js"
   },
@@ -30,6 +30,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
+    "@types/jest": "^27.0.1",
     "@typescript-eslint/eslint-plugin": "^4.29.2",
     "@typescript-eslint/parser": "^4.29.2",
     "eslint-config-airbnb-typescript": "^12.3.1",
