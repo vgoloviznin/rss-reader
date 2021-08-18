@@ -16,15 +16,11 @@ export async function getFeed(url?: string): Promise<RSSResponse> {
     return cached;
   }
 
-  try {
-    const response = await axios.get<RSSResponse>(`https://api.rss2json.com/v1/api.json?rss_url=${url}`);
+  const response = await axios.get<RSSResponse>(`https://api.rss2json.com/v1/api.json?rss_url=${url}`);
 
-    cache.set(url, response.data);
+  cache.set(url, response.data);
 
-    return response.data;
-  } catch (e) {
-    return <RSSResponse>{ status: 'error', message: 'error' };
-  }
+  return response.data;
 }
 
 export default { getFeed };

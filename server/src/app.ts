@@ -1,11 +1,11 @@
 import express from 'express';
 import cors, { CorsOptions } from 'cors';
 
-import routes from './controllers';
+import routes from './controllers/index';
 import { errorMiddleware } from './middlewares/error';
 
 const PORT = process.env.PORT || 3000;
-const allowedOrigins = ['http://localhost:3001'];
+const allowedOrigins = ['http://localhost:8080'];
 
 const options: CorsOptions = {
   origin: allowedOrigins,

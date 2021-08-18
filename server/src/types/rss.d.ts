@@ -1,7 +1,8 @@
 interface RSSItem {
   title: string;
   description: string;
-  url: string;
+  link: string;
+  guid: string;
 }
 
 interface RSSResponse {
