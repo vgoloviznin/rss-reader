@@ -5,7 +5,7 @@ import routes from './controllers/index';
 import { errorMiddleware } from './middlewares/error';
 
 const PORT = process.env.PORT || 3000;
-const allowedOrigins = ['http://localhost:8080'];
+const allowedOrigins = ['http://localhost:8080', 'http://localhost:8000'];
 
 const options: CorsOptions = {
   origin: allowedOrigins,
