@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Rss Reader App",
+  "short_name": "Rss Reader App",
+  "version": "io.cordova.hellocordova",
+  "description": "App that reads RSS",
+  "author": "Vsevolod Goloviznin",
+  "icons": [],
+  "start_url": "index.html"
+}
