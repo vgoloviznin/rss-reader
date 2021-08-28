@@ -1,3 +1,4 @@
 module.exports = {
-  outputDir: './www'
+  outputDir: './www',
+  publicPath: './'
 };

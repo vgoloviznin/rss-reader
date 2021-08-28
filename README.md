@@ -26,3 +26,8 @@ Alternatively, you can run `npm run heroku-deploy`.
 #### Running tests
 
 Run `npm run test` to run the tests.
+
+#### Running cordova
+
+1. In the `client` folder run `cordova run browser` to open the app in the browser
+2. In the `client` folder run `cordova run ios` to open the app in the iOS simulator
