@@ -6,4 +6,4 @@ RUN npm install
 RUN npm build
 COPY . .
 EXPOSE 3000
-CMD [ "node", "./dist/app.js" ]
+CMD [ "node", "./dist/src/app.js" ]
