@@ -6,7 +6,8 @@
   "scripts": {
     "test": "./node_modules/.bin/jest",
     "build": "rm -rf dist && npm i && ./node_modules/.bin/tsc",
-    "start": "node ./dist/app.js"
+    "start": "node ./dist/src/app.js",
+    "heroku-deploy": "npm run build && docker build --tag rss-api . && heroku container:push web && heroku container:release web"
   },
   "repository": {
     "type": "git",

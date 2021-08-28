@@ -21,6 +21,8 @@ Run `npm run build` command to build TS files, after that you can run `npm start
 3. Run `heroku container:release web` to release the image on Heroku
 4. Run `heroku open` to open the released API in your browser
 
+Alternatively, you can run `npm run heroku-deploy`.
+
 #### Running tests
 
 Run `npm run test` to run the tests.
